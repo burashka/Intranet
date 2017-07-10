@@ -1,0 +1,19 @@
+{
+  "name": "intranet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3333 node ./bin/www"
+  },
+  "devDependencies": {
+    "@microsoft/microsoft-graph-client": "^0.4.0",
+    "body-parser": "~1.17.1",
+    "config": "^1.26.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "excel-as-json": "^2.0.1",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "simple-oauth2": "^1.3.0"
+  }
+}
