@@ -1,0 +1,10 @@
+{
+	"o365": {
+		"id": 		"YOUR APP ID HERE",
+		"secret": 	"YOUR APP PASSWORD HERE"
+	},
+	"company": {
+		"name": 	"YOUR COMPANY NAME HERE",
+		"location": "YOUR OFFICE LOCATION HERE"
+	}
+}
