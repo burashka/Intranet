@@ -13,6 +13,7 @@ const roomsData 	= require("../../data/roomsData.json");
 
 const companyName 		= config.get("company.name");
 const companyLocation 	= config.get("company.location");
+const seatsFile 		= config.get("files.seats");
 
 function getPeople({ token, email }){
 	// Create a Graph client
@@ -39,7 +40,7 @@ function getPeople({ token, email }){
 
 function getSpaces() {
 	return new Promise((resolve, reject) => {
-		convertExcel("data/MscSeatChart.xlsx", undefined, { isColOriented: false }, (err, data) => {
+		convertExcel(`data/${seatsFile}`, undefined, { isColOriented: false }, (err, data) => {
 			if (err){
 				reject(err);
 			} else {
