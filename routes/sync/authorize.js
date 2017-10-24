@@ -8,7 +8,7 @@ function setCookie(token, response) {
 }
 
 function getRidirectUri(req){
-	return 'http://' + req.header('Host') + req.baseUrl;
+	return 'https://' + req.header('Host') + req.baseUrl;
 }
 
 async function getUserEmail(token) {
@@ -75,13 +75,13 @@ async function authorize(req, res) {
 				await tokenReceived(res, token, redirectUri);
 			} catch(err){
 				console.log('Access token error: ', error.message);
-				res.send('<p>ERROR: ' + error + '</p>');
+				res.send(`<p>ERROR: ${error}</p>`);
 			}
 		} else {
-			res.send('<p>Please <a href="' + authHelper.getAuthUrl(getRidirectUri(req)) + '">sign in</a> with your Office 365 or Outlook.com account.</p>');
+			res.send(`<p>Please <a href="${authHelper.getAuthUrl(getRidirectUri(req))}">sign in</a> with your Office 365 or Outlook.com account.</p>`);
 		}
 
-		throw "Not authorized";
+		return {};
 	}
 }
 

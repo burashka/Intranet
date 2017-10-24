@@ -128,6 +128,12 @@ router.get('/', async (req, res) => {
 
 	try {
 		const { token, email } 	= await authorize(req, res);
+
+		if (!token){
+			console.log("Not authorized");
+			return;
+		}
+
 		const usersData 		= await getPeople({ token, email });
 		const usersSpaces 		= await getSpaces();
 

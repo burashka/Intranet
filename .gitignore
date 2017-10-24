@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+sslcert/cert.pem
+sslcert/key.pem
+
+data/MscSeatChart.xlsx
+
+config/production.json
