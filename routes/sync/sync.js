@@ -64,12 +64,13 @@ function serialize(template, users) {
 						<h3 class="content__item-title">${displayName}</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
-								<span class="content__meta-item"><strong>Department:</strong> ${department}</span>
+								<span class="content__meta-item"><strong>${department}</strong> ${title}</span>
 							</p>
-							<p class="content__desc"><strong>Title:</strong> ${title}</p>
-							<p class="content__desc"><strong>Email:</strong> ${email}</p>
-							<p class="content__desc"><strong>Work phone:</strong> ${phone}</p>
-							<p class="content__desc"><strong>Mobile phone:</strong> ${mobile}</p>
+							<ul class="content__desc">
+								<li data-attr="Email:"><a href="mailto:${email}">${email}</a></li>
+								<li data-attr="Ext. Phone:">${phone}</li>
+								<li data-attr="Mobile Phone:">${mobile}</li>
+							</ul>
 						</div>
 					</div>
 				`;
@@ -77,11 +78,13 @@ function serialize(template, users) {
 			case 1:		// meeting room
 				itemHtml = `
 					<div class="content__item" data-space="${space}" data-category="${category}">
-						<h3 class="content__item-title">${displayName}</h3>
+						<h3 class="content__item-title"><span>${space}</span>${displayName}</h3>
 						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Email:</strong> ${email}</span>
-							</p>
+							<ul class="content__desc">
+								<li data-attr="Email:"><a href="mailto:${email}">${email}</a></li>
+								<li data-attr="Room Phone:">+7495 1234623 Ext. 00${space}</li>
+								<li data-attr="Scheduled:"><a target="_blank" href="https://outlook.office365.com/owa/?realm=odin.com&exsvurl=1&ll-cc=1033&modurl=1">Look</a></li>
+							</ul>
 						</div>
 					</div>
 				`;
@@ -89,7 +92,7 @@ function serialize(template, users) {
 			default:
 				itemHtml = `
 					<div class="content__item" data-space="${space}" data-category="${category}">
-						<h3 class="content__item-title">${displayName}</h3>
+						<h3 class="content__item-title"><span>${space}</span>${displayName}</h3>
 						<div class="content__item-details"></div>
 					</div>
 				`;
@@ -97,7 +100,7 @@ function serialize(template, users) {
 
 		listStr += `
 			<li class="list__item" data-level="${space[0]}" data-category="${category}" data-space="${space}">
-				<a href="javascript:void()" class="list__link">${displayName}</a>
+				<a href="javascript:void()" class="list__link"><span>${space}<i>${email}||${phone}||${department}||${title}</i></span>${displayName}</a>
 			</li>
 		`;
 

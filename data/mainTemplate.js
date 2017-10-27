@@ -40,36 +40,33 @@ module.exports = `
 				</defs>
 			</svg>
 			<div class="container">
+				<a class="test" href="/sync" target="_blank">Sync</a>
 				<div class="main">
-					<header class="header">
-						<h1>{COMPANY NAME} Office Map</h1>
-					</header>
 					{MAP}
-	
 					<!-- Navigation -->
-					<button class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+					<button class="boxbutton boxbutton--dark open-search" title="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
 					<nav class="mallnav mallnav--hidden">
-						<button class="boxbutton mallnav__button--up" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
-						<button class="boxbutton boxbutton--dark mallnav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
-						<button class="boxbutton mallnav__button--down" aria-label="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
+						<button class="boxbutton mallnav__button--up" title="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
+						<button class="boxbutton boxbutton--dark mallnav__button--all-levels" title="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
+						<button class="boxbutton mallnav__button--down" title="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
 					</nav>
 					<!-- Navigation -->
-					
+
 					<div class="content">
+						<button class="boxbutton boxbutton--dark content__button content__button--hidden" title="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 						{ITEMS}
-						<button class="boxbutton boxbutton--dark content__button content__button--hidden" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 					</div>
 					<!-- content -->
 				</div>
 				<!-- /main -->
 				<aside class="spaces-list" id="spaces-list">
 					<div class="search">
-						<input class="search__input" placeholder="Search..." />
-						<button class="boxbutton boxbutton--darker close-search" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+						<input class="search__input" placeholder="Enter anything..." />
+						<button class="boxbutton boxbutton--darker close-search" title="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 					</div>
 					<span class="label">
-						<input id="sort-by-name" class="label__checkbox" type="checkbox" aria-label="Show alphabetically"/>
-						<label class="label__text">A - Z</label>
+						<input id="sort-by-name" class="label__checkbox" type="checkbox" title="Show alphabetically"/>
+						<label for="sort-by-name" class="label__text"></label>
 					</span>
 					<ul class="list grouped-by-category">
 						{LIST}

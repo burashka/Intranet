@@ -1,149 +1,88 @@
 [
 	{
-		"displayName": "Meeting Room 'Galaxy' — 100",
+		"displayName": "Meeting Room 'Galaxy'",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
 		"email": "conferenceroom100@odin.com",
 		"space": "100"
 	}, {
-		"displayName": "Meeting Room 'Saturn' — 101",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 1,
-		"email": "conferenceroom101@odin.com",
-		"space": "101"
-	}, {
-		"displayName": "Meeting Room 'Jupiter' — 102",
+		"displayName": "Meeting Room 'Jupiter'",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
 		"email": "conferenceroom102@odin.com",
 		"space": "102"
 	}, {
-		"displayName": "Meeting Room 'Earth' — 104",
+		"displayName": "Meeting Room 'Earth'",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
 		"email": "conferenceroom104@odin.com",
 		"space": "104"
 	}, {
-		"displayName": "Meeting Room 'Mercury' — 108",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 1,
-		"email": "conferenceroom108@odin.com",
-		"space": "108"
-	}, {
-		"displayName": "Meeting Room 'Sirius' — 106",
+		"displayName": "Meeting Room 'Sirius'",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
 		"email": "conferenceroom106@odin.com",
 		"space": "109"
 	}, {
-		"displayName": "Big Coffee Point — 111",
+		"displayName": "Big Coffee Point",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 4,
+		"space": "110"
+	}, {
+		"displayName": "WC for Men",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 5,
 		"space": "111"
 	}, {
-		"displayName": "Small Coffee Point — 112",
+		"displayName": "WC for Ladies",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 5,
+		"space": "112"
+	}, {
+		"displayName": "Small Coffee Point",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 4,
-		"space": "112"
-	}, {
-		"displayName": "WC for Ladies — 131",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 5,
-		"space": "131"
-	}, {
-		"displayName": "WC for Men — 127",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 5,
-		"space": "127"
-	}, {
-		"displayName": "HR",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "113"
-	}, {
-		"displayName": "Finance",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "115"
-	}, {
-		"displayName": "Admin Services",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "116"
-	}, {
-		"displayName": "Finance",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "117"
-	}, {
-		"displayName": "Legal",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "121"
-	}, {
-		"displayName": "IT",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "123"
-	}, {
-		"displayName": "Legal",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
 		"space": "128"
-	}, {
-		"displayName": "OHR",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "132"
-	}, {
-		"displayName": "HR",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "134"
-	}, {
-		"displayName": "HR",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
-		"space": "113"
-	}, {
-		"displayName": "Meeting Room — 201",
+	},{
+		"displayName": "Meeting Room",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
 		"email": "conferenceroom201@odin.com",
 		"space": "201"
 	}, {
-		"displayName": "Services Team Lead Office",
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom202@odin.com",
+		"space": "202"
+	}, {
+		"displayName": "Team Lead Office",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 2,
 		"space": "203"
 	}, {
-		"displayName": "Services Team Lead Office",
+		"displayName": "Team Lead Office",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 2,
-		"space": "204"
+		"space": "207"
+	}, {
+		"displayName": "Big Coffee Point",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 4,
+		"space": "208"
 	}, {
 		"displayName": "Office General Manager",
 		"companyName": "Odin",
@@ -151,60 +90,164 @@
 		"category": 2,
 		"space": "209"
 	}, {
+		"displayName": "WC for Men",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 5,
+		"space": "210"
+	}, {
 		"displayName": "Office General Manager",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 2,
 		"space": "211"
 	}, {
-		"displayName": "Big Coffee Point",
+		"displayName": "Meeting Room",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
-		"category": 4,
+		"category": 1,
+		"email": "conferenceroom212@odin.com",
 		"space": "212"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom213@odin.com",
+		"space": "213"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom220@odin.com",
+		"space": "216"
+	}, {
+		"displayName": "Team Lead Office",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "215"
 	}, {
 		"displayName": "Small Coffee Point",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 4,
-		"space": "216"
-	}, {
-		"displayName": "Adv.Research Team Lead Office",
-		"companyName": "Odin",
-		"officeLocation": "Moscow",
-		"category": 2,
 		"space": "218"
 	}, {
-		"displayName": "DevOps Team Lead Office",
+		"displayName": "Team Lead Office",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 2,
+		"space": "217"
+	}, {
+		"displayName": "WC for Ladies",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 5,
 		"space": "219"
-	}, {
-		"displayName": "Meeting Room — 202",
+	},{
+		"displayName": "Meeting Room",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
-		"email": "conferenceroom202@odin.com",
-		"space": "202"
+		"email": "conferenceroom301@odin.com",
+		"space": "301"
 	}, {
-		"displayName": "Meeting Room — 220",
+		"displayName": "Meeting Room",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 1,
-		"email": "conferenceroom220@odin.com",
-		"space": "220"
+		"email": "conferenceroom302@odin.com",
+		"space": "302"
 	}, {
-		"displayName": "WC for Ladies — 227",
+		"displayName": "Team Lead Office",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "303"
+	}, {
+		"displayName": "Team Lead Office",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "307"
+	}, {
+		"displayName": "Big Coffee Point",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 4,
+		"space": "308"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom309@odin.com",
+		"space": "309"
+	}, {
+		"displayName": "WC for Men",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 5,
-		"space": "227"
+		"space": "310"
 	}, {
-		"displayName": "WC for Men — 223",
+		"displayName": "Office General Manager",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "311"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom312@odin.com",
+		"space": "312"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom313@odin.com",
+		"space": "313"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom314@odin.com",
+		"space": "314"
+	}, {
+		"displayName": "Team Lead Office",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "315"
+	}, {
+		"displayName": "Meeting Room",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 1,
+		"email": "conferenceroom316@odin.com",
+		"space": "316"
+	}, {
+		"displayName": "Team Lead Office",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 2,
+		"space": "317"
+	}, {
+		"displayName": "Small Coffee Point",
+		"companyName": "Odin",
+		"officeLocation": "Moscow",
+		"category": 4,
+		"space": "318"
+	}, {
+		"displayName": "WC for Ladies",
 		"companyName": "Odin",
 		"officeLocation": "Moscow",
 		"category": 5,
-		"space": "223"
+		"space": "319"
 	}
 ]
