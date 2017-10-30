@@ -122,6 +122,10 @@ function write(html){
 	});
 }
 
+function toLowerCase(str) {
+	return (str || "").toLowerCase();
+}
+
 router.get('/', async (req, res) => {
 	let indexHTML = mainTemplate;
 	indexHTML = indexHTML.replace(/{COMPANY NAME}/gi, companyName);
@@ -143,10 +147,13 @@ router.get('/', async (req, res) => {
 		const users = [];
 		usersSpaces.forEach((userSpace) => {
 			let user = usersData.find((userData) => {
-				return userData.givenName === userSpace["First Name"] && userData.surname === userSpace["Last Name"];
+				return toLowerCase(userData.givenName) === toLowerCase(userSpace["First Name"]) &&
+					toLowerCase(userData.surname) === toLowerCase(userSpace["Last Name"]);
 			});
 
-			if (!user) return;
+			if (!user) {
+				return;
+			}
 
 			user.space = userSpace.Seat.toPrecision(4);
 
