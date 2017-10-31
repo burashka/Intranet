@@ -12,7 +12,6 @@ const mainTemplate 	= require("../../data/mainTemplate");
 const roomsData 	= require("../../data/roomsData.json");
 
 const companyName 		= config.get("company.name");
-const companyLocation 	= config.get("company.location");
 const seatsFile 		= config.get("files.seats");
 
 function getPeople({ token, email }){
@@ -27,7 +26,7 @@ function getPeople({ token, email }){
 	return client
 		.api('/me/people')
 		.version("beta")
-		.filter(`companyName eq '${companyName}' and officeLocation eq '${companyLocation}'`)
+		.filter(`companyName eq '${companyName}'`)
 		.select("displayName", "givenName", "surname", "title", "companyName", "department", "officeLocation", "phones", "emailAddresses")
 		.header('X-AnchorMailbox', email)
 		.top(1000)
@@ -122,8 +121,8 @@ function write(html){
 	});
 }
 
-function toLowerCase(str) {
-	return (str || "").toLowerCase();
+function normalize(str) {
+	return (str || "").toLowerCase().trim();
 }
 
 router.get('/', async (req, res) => {
@@ -147,11 +146,14 @@ router.get('/', async (req, res) => {
 		const users = [];
 		usersSpaces.forEach((userSpace) => {
 			let user = usersData.find((userData) => {
-				return toLowerCase(userData.givenName) === toLowerCase(userSpace["First Name"]) &&
-					toLowerCase(userData.surname) === toLowerCase(userSpace["Last Name"]);
+				return normalize(userData.givenName) === normalize(userSpace["First Name"]) &&
+					normalize(userData.surname) === normalize(userSpace["Last Name"]);
 			});
 
-			if (!user) {
+			if (!user || !userSpace.Seat) {
+				if (userSpace["Last Name"] !== "Vacant" && userSpace["Last Name"] !== "Архив" && !!userSpace["Last Name"]){
+					console.log(JSON.stringify(userSpace));
+				}
 				return;
 			}
 
