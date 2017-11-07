@@ -8,6 +8,7 @@ module.exports = `
 			<title>{COMPANY NAME} Office Map</title>
 			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<link rel="apple-touch-icon" href="img/map-icon.png">
 			<script src="js/modernizr-custom.js"></script>
 		</head>
 		<body>
