@@ -1,6 +1,6 @@
 module.exports = `
 	<!DOCTYPE html>
-	<html lang="en" class="no-js">
+	<html lang="en" class="no-js" manifest="webclip.appcache">
 		<head>
 			<meta charset="UTF-8" />
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">

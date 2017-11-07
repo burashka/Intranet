@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+# Map cache v1
+# html files
+index.html
+
+# css files
+css/normalize.css
+css/style.css
+
+# js files
+js/classie.js
+js/list.min.js
+js/main.js
+js/modernizr-custom.js
+
+# images
+img/surroundings.svg
