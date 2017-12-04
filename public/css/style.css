@@ -932,7 +932,7 @@ button:focus {
 
 .grouped-by-category [data-category='0']:first-child::before,
 .grouped-by-category :not([data-category='0']) + [data-category='0']::before {
-	content: 'Peoples';
+	content: 'People';
 	color: #B8B8BD;
 }
 
