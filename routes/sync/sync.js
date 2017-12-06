@@ -157,7 +157,7 @@ router.get('/', async (req, res) => {
 				return;
 			}
 
-			user.space = userSpace.Seat.toPrecision(4);
+			user.space = userSpace.Seat.toPrecision(3);
 
 			const workPhone 	= user.phones.find((phone) => phone.type === "business");
 			const mobilePhone 	= user.phones.find((phone) => phone.type === "mobile");
