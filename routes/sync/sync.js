@@ -99,7 +99,7 @@ function serialize(template, users) {
 
 		listStr += `
 			<li class="list__item" data-level="${space[0]}" data-category="${category}" data-space="${space}">
-				<a href="javascript:void()" class="list__link"><span>${space}<i>${email}||${phone}||${department}||${title}</i></span>${displayName}</a>
+				<a href="javascript:void()" class="list__link"><span>${!category ? "" : space}<i>${email}||${phone}||${department}||${title}</i></span>${displayName}</a>
 			</li>
 		`;
 
