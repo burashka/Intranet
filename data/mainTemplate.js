@@ -61,7 +61,7 @@ module.exports = `
 				<!-- /main -->
 				<aside class="spaces-list" id="spaces-list">
 					<div class="search">
-						<input class="search__input" placeholder="Enter anything..." />
+						<input class="search__input" placeholder="Enter something..." />
 						<button class="boxbutton boxbutton--darker close-search" title="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 					</div>
 					<span class="label">
