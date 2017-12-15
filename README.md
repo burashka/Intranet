@@ -33,7 +33,7 @@ You should set redirect URI: https://localhost:8443/sync.
 	```
 3. Create in directory 'data' file from field 'files.seats'.
 File should contains fields "Last Name", "First Name", "Seat". Format seat: 1.001.
-<img src='https://raw.githubusercontent.com/burashka/Intranet/master/img/excel.jpg'
+<img src='https://raw.githubusercontent.com/burashka/Intranet/master/img/excel.jpg'>
 
 4. Add a description of the office floor scheme to the file data/mapTemplate.js
 
