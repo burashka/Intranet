@@ -31,7 +31,7 @@ const certificate = fs.readFileSync('sslcert/cert.pem', 'utf8');
 
 const credentials = {key: privateKey, cert: certificate};
 const httpsServer = https.createServer(credentials, app);
-httpsServer.listen(8443);
+httpsServer.listen(process.env.HTTPS_PORT || 443);
 
 /**
  * Listen on provided port, on all network interfaces.

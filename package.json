@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production PORT=3333 node ./bin/www"
+    "start": "NODE_ENV=production PORT=3333 HTTPS_PORT=8443 node ./bin/www"
   },
   "devDependencies": {
     "@microsoft/microsoft-graph-client": "^0.4.0",
