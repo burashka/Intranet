@@ -27,7 +27,6 @@ function getPeople({ token, email }){
 	return client
 		.api('/me/people')
 		.version("beta")
-		// .filter(`companyName eq '${companyName}'`)
 		.select("displayName", "givenName", "surname", "title", "companyName", "department", "officeLocation", "phones", "emailAddresses")
 		.header('X-AnchorMailbox', email)
 		.top(1000)
