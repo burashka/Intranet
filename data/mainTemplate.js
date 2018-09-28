@@ -9,6 +9,7 @@ module.exports = `
 			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 			<script src="js/modernizr-custom.js"></script>
+			{ANALYTICS}
 		</head>
 		<body>
 			<svg class="hidden">

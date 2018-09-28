@@ -13,6 +13,7 @@ const roomsData 	= require("../../data/roomsData.json");
 
 const companyName 		= config.get("company.name");
 const seatsFile 		= config.get("files.seats");
+const analytics 		= config.get("analytics");
 
 function getPeople({ token, email }){
 	// Create a Graph client
@@ -26,7 +27,7 @@ function getPeople({ token, email }){
 	return client
 		.api('/me/people')
 		.version("beta")
-		.filter(`companyName eq '${companyName}'`)
+		// .filter(`companyName eq '${companyName}'`)
 		.select("displayName", "givenName", "surname", "title", "companyName", "department", "officeLocation", "phones", "emailAddresses")
 		.header('X-AnchorMailbox', email)
 		.top(1000)
@@ -129,6 +130,7 @@ router.get('/', async (req, res) => {
 	let indexHTML = mainTemplate;
 	indexHTML = indexHTML.replace(/{COMPANY NAME}/gi, companyName);
 	indexHTML = indexHTML.replace("{MAP}", mapTemplate);
+	indexHTML = indexHTML.replace("{ANALYTICS}", analytics);
 
 	roomsData.sort((a, b) => a.category - b.category);
 
@@ -145,10 +147,14 @@ router.get('/', async (req, res) => {
 
 		const users = [];
 		usersSpaces.forEach((userSpace) => {
-			let user = usersData.find((userData) => {
-				return normalize(userData.givenName) === normalize(userSpace["First Name"]) &&
-					normalize(userData.surname) === normalize(userSpace["Last Name"]);
-			});
+			let user = usersData.find((userData) => (
+				normalize(userData.displayName) === `${normalize(userSpace["First Name"])} ${normalize(userSpace["Last Name"])}`
+				|| normalize(userData.displayName) === `${normalize(userSpace["First Name"])}, ${normalize(userSpace["Last Name"])}`
+				|| (
+					normalize(userData.givenName) === normalize(userSpace["First Name"])
+					&& normalize(userData.surname) === normalize(userSpace["Last Name"])
+				)
+			));
 
 			if (!user || !userSpace.Seat) {
 				if (userSpace["Last Name"] !== "Vacant" && userSpace["Last Name"] !== "Архив" && !!userSpace["Last Name"]){
