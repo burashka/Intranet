@@ -1,6 +1,6 @@
 module.exports = `
 	<!DOCTYPE html>
-	<html lang="en" class="no-js">
+	<html lang="en" class="no-js" manifest="webclip.appcache">
 		<head>
 			<meta charset="UTF-8" />
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@ module.exports = `
 			<title>{COMPANY NAME} Office Map</title>
 			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<link rel="apple-touch-icon" href="img/map-icon.png">
 			<script src="js/modernizr-custom.js"></script>
 			{ANALYTICS}
 		</head>
